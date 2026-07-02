@@ -12,8 +12,10 @@ document.querySelectorAll("a").forEach(link => {
 
 const words = [
     "Java Developer",
-    "Web Developer",
-    "Problem Solver"
+    "Frontend Developer",
+    "Problem Solver",
+    "Quick Learner",
+    "Open to Work"
 ];
 
 let i = 0;
