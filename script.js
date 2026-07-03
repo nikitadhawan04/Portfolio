@@ -40,7 +40,7 @@ function typeEffect() {
         setTimeout(typeEffect, 1000);
     } else if (isDeleting && j === 0) {
         isDeleting = false;
-        i++;
+        i++;    
 
         if (i === words.length) {
             i = 0;
@@ -52,36 +52,5 @@ function typeEffect() {
     }
 
 }
-
-if (typing) {
-    typeEffect();
-}
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav ul li a");
-
-window.addEventListener("scroll", () => {
-
-    let current = "";
-
-    sections.forEach(section => {
-
-        const sectionTop = section.offsetTop - 100;
-
-        if (pageYOffset >= sectionTop) {
-            current = section.getAttribute("id");
-        }
-
-    });
-
-    navLinks.forEach(link => {
-
-        link.classList.remove("active");
-
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-        }
-
-    });
-
-});
-}
+if (typing){
+    typeEffect();}
